@@ -11,7 +11,7 @@ public class Integral<T extends IFunction> implements IFunctional<T> {
 
     public Integral(double a, double b) {
         if (a > b) {
-            double buf = 0;
+            double buf;
             buf = a;
             a = b;
             b = buf;
@@ -27,8 +27,7 @@ public class Integral<T extends IFunction> implements IFunctional<T> {
         int split = 5;
         double result1 = 0.0;
         double result2 = 0.1;
-
-        double h = 0;
+        double h;
         while (Math.abs(result2 - result1) > 0.01) {
             double begin = a + ((b - a) / (2 * split));
             h = (b - a) / split;

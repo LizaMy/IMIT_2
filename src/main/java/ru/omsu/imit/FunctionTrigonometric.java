@@ -16,8 +16,6 @@ public class FunctionTrigonometric implements IFunction {
             throw new BadValueException("The coefficient by x cannot equal 0");
         }
         if (a > b) {
-//            this.a = b;
-//            this.b = a;
             double temp = a;
             a = b;
             b = temp;

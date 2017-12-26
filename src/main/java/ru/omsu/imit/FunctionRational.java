@@ -25,8 +25,6 @@ public class FunctionRational implements IFunction {
         }
 
         if (a > b) {
-//                this.a = b;
-//                this.b = a;
             double temp = a;
             a = b;
             b = temp;
